@@ -10,6 +10,25 @@
     <!--tailwind cdn-->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!--external color setup-->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'green': '#179800',
+              }
+            }
+          }
+        }
+      </script>
+
+    <!--daisyUI cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +42,79 @@
 
 </head>
 <body class="font-sora">
+  <!--header section-->
+  <header class="container bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
 
-    
-    
+    <nav class="items-center mx-auto  lg:px-32 lg:py-10">
+      <div class="navbar">
+          <div class="navbar-start gap-44 lg:gap-0">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-bold">
+                  <li><a>Product</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <img class="cursor-pointer" src="assets/logo-header.png" alt="">
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-bold">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-3 hidden lg:flex lg:block">
+              <div class="hidden lg:flex gap-5 mx-6 opacity-70">
+                  <img class="w-6 "  src="assets/magnifying-glass-solid.svg" alt="">
+              <img class="w-6" src="assets/cart-shopping-solid (1).svg" alt="">
+              </div>
+            <a class="btn border-green-600 shadow-lg">Login</a>
+            <a class="btn bg-green-600 text-white">Register</a>
+          </div>
+        </div>
+   </nav>
+
+    <hr class="bg-green-600 lg:hidden">
+    <!--hero section-->
+    <!--hero title-->
+    <div class="my-5">
+      <h1 class="text-center text-4xl lg:text-6xl font-bold">
+        Freshness <span class="text-green-600"> You Can <br> Count</span> On, Prices <br class="lg:hidden"> You’ll Love!
+      </h1>
+
+      <p class="text-center my-6">
+        Shop your daily essentials at unbeatable <br class="lg:hidden"> prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
+      </p>
+    </div>
+      <!--hero image-->
+    <figure class="mx-auto lg:w-[1000px] lg:h-[820px] my-4">
+      <img src="assets/hero-vegetables.png" alt="vegetables">
+
+    </figure>
+
+  </header>
+
+ 
+  
+
+ 
+
 </body>
 </html>
